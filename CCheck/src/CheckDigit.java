@@ -1,6 +1,9 @@
 import java.util.Scanner;
+import org.junit.Test;
+
 public class CheckDigit 
 {
+		@Test
 		public static void main(String[] args) 
 		{
 			String creditCard;
@@ -12,11 +15,12 @@ public class CheckDigit
 	        
 	    }
 	 
-	 
-	    private static void validateCreditCardNumber(String str) 
+		@Test
+	    public static void validateCreditCardNumber(String str) 
 	    {
 	         
 	        int[] ints = new int[str.length()];
+	        
 	        
 	        for(int i = 0; i < str.length(); i++)
 	        {
